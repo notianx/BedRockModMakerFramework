@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT item (beh, res)>
+
+<!ELEMENT beh (ID, name, tab, foil, isCreateModeShow, damage)>
+<!ELEMENT ID ANY>
+<!ELEMENT name ANY>
+<!ELEMENT tab ANY>
+<!ELEMENT foil ANY>
+<!ELEMENT isCreateModeShow ANY>
+<!ELEMENT damage ANY>
+
+<!ELEMENT res (textures)>
+<!ELEMENT textures ANY>
+
+<!ATTLIST item type CDATA "">

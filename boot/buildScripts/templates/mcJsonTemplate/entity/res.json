@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "namespace:id",
+      "enable_attachables": true,
+      "geometry": {
+        "default": "geometry.id"
+      },
+      "animation_controllers": [
+        {
+          "default": "controller.animation.id"
+        }
+      ],
+      "animations": {
+        "idle": "animation.id.idle"
+      },
+      "materials": {
+        "default": "armor_stand"
+      },
+      "render_controllers": [
+        "controller.render.armor_stand"
+      ],
+      "textures": {
+        "default": "textures/entity/id"
+      }
+    }
+  }
+}

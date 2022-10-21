@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT block (beh, res, monster_box*)>
+
+<!ELEMENT beh (ID, name, isCreateModeShow, light)>
+<!ELEMENT ID ANY>
+<!ELEMENT name ANY>
+<!ELEMENT isCreateModeShow ANY>
+<!ELEMENT light ANY>
+
+<!ELEMENT monster_box (monster)>
+<!ELEMENT monster ANY>
+
+<!ELEMENT res (textures)>
+<!ELEMENT textures ANY>
+
+<!ATTLIST entity type CDATA "">

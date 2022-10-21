@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<tabs>
+
+    <tab id = "taba">
+        <name>物品分页</name>
+        <texture>texture/tab/icon</texture>
+    </tab>
+
+    <tab id = "tabb">
+        <name>物品分页</name>
+        <texture>texture/tab/icon</texture>
+    </tab>
+
+    <tab id = "tabc">
+        <name>物品分页</name>
+        <texture>texture/tab/icon</texture>
+    </tab>
+
+
+</tabs>

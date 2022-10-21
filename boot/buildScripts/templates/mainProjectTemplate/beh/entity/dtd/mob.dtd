@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!ELEMENT entity (beh, res)>
+
+<!ELEMENT beh (ID+,name+,familys+,base+,attack,AI,lootTable)>
+<!ELEMENT ID ANY>
+<!ELEMENT name ANY>
+<!ELEMENT familys (family+)>
+<!ELEMENT family ANY>
+<!ELEMENT base (box+, health+, move+)>
+<!ELEMENT box (width+, height+)>
+<!ELEMENT width ANY>
+<!ELEMENT height ANY>
+<!ELEMENT health ANY>
+<!ELEMENT move (speed)>
+<!ELEMENT speed ANY>
+<!ELEMENT attack (damage)>
+<!ELEMENT damage ANY>
+<!ELEMENT AI (canMove*, canClimb*, randomWalk*, attackFamilys)>
+<!ELEMENT canMove EMPTY>
+<!ELEMENT canClimb EMPTY>
+<!ELEMENT randomWalk ANY>
+<!ELEMENT attackFamilys ANY>
+<!ELEMENT lootTable (item)>
+<!ELEMENT item ANY>
+<!ELEMENT res (model+,material,animations,animation_controllers, textures+, sounds)>
+<!ELEMENT model ANY>
+<!ELEMENT material ANY>
+<!ELEMENT animations (animation+)>
+<!ELEMENT animation ANY>
+<!ELEMENT animation_controllers (initial_state, state+)>
+<!ELEMENT initial_state ANY>
+<!ELEMENT state (animations+,transitions+)>
+<!ELEMENT transitions ANY>
+<!ELEMENT textures ANY>
+<!ELEMENT sounds (moveSound*, idleSound*, deadSound*, hurtSound*)>
+<!ELEMENT moveSound ANY>
+<!ELEMENT idleSound ANY>
+<!ELEMENT deadSound ANY>
+<!ELEMENT hurtSound ANY>
+
+<!ATTLIST entity type CDATA "">
+<!ATTLIST move type CDATA "">
+<!ATTLIST attack type CDATA "">
+<!ATTLIST item change CDATA "">
+<!ATTLIST animation name CDATA "">
+<!ATTLIST state name CDATA "">
+<!ATTLIST transitions state CDATA "">

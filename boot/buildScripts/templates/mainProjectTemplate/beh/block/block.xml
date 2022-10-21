@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE block SYSTEM "../block/dtd/block.dtd">
+
+<block>
+
+    <beh>
+        <ID>testB</ID>
+        <name>测试方块</name>
+        <isCreateModeShow>true</isCreateModeShow>
+        <light>0</light>
+    </beh>
+
+    <res>
+        <textures>textures/blocks/testB</textures>
+    </res>
+
+</block>

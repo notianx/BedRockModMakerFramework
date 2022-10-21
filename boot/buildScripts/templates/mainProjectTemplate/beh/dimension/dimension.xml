@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<dimension type = "overworld">
+
+    <ID>dimension</ID>
+    <name>深渊</name>
+
+    <sky_color>
+        <r>0</r>
+        <g>0</g>
+        <b>0</b>
+    </sky_color>
+
+    <biomes>
+        <biome id = "biomeA"/>
+        <biome id = "biomeB"/>
+    </biomes>
+
+</dimension>

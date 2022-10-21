@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE item SYSTEM "../dtd/weapon.dtd">
+
+<item type = "weapon">
+
+    <beh>
+        <ID>weapon</ID>
+        <name>烈焰之剑</name>
+        <tab>tab</tab>
+        <foil>false</foil>
+        <isCreateModeShow>true</isCreateModeShow>
+        <damage>5</damage>
+    </beh>
+
+    <res>
+        <textures>None</textures>
+    </res>
+
+</item>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<book>
+
+    <useItem>item</useItem>
+    <bigTitle>title1</bigTitle>
+    <smallTitle>title2</smallTitle>
+    <content>
+        这是内容部分
+    </content>
+
+</book>

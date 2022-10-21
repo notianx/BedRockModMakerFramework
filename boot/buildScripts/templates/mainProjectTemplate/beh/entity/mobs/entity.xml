@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE entity SYSTEM "../dtd/mob.dtd">
+
+<entity type="mob">
+    <!--行为配置-->
+    <beh>
+        <ID>shougezhe</ID>
+        <name>收割者</name>
+        <familys>
+            <family>mob</family>
+            <family>undead</family>
+        </familys>
+        <base>
+            <box>
+                <width>1.2</width>
+                <height>1.5</height>
+            </box>
+            <health>10</health>
+            <move type="land">
+                <speed>1</speed>
+            </move>
+        </base>
+        <attack type="melee">
+            <damage>5</damage>
+        </attack>
+        <AI>
+            <canMove/>
+            <canClimb/>
+            <randomWalk/>
+            <attackFamilys>
+                <family>player</family>
+            </attackFamilys>
+        </AI>
+        <lootTable>
+            <item change="50">itemid</item>
+        </lootTable>
+    </beh>
+    <!--资源配置-->
+    <res>
+        <model>entity.geo</model>
+        <material>default</material>
+        <animations>
+            <animation name="idle">animation.moba.idle</animation>
+            <animation name="move">animation.moba.move</animation>
+        </animations>
+        <animation_controllers>
+            <initial_state>default</initial_state>
+            <state name = "default">
+                <animations>
+                    <animation name="idle"/>
+                </animations>
+                <transitions state = "move">query.is_moving</transitions>
+            </state>
+            <state name="move">
+                <animations>
+                    <animation name="move"/>
+                </animations>
+                <transitions state = "default">!query.is_moving</transitions>
+            </state>
+        </animation_controllers>
+        <textures>textures/entity/moba</textures>
+        <sounds>
+            <moveSound>move.ogg</moveSound>
+            <idleSound>idle.ogg</idleSound>
+            <deadSound>dead.ogg</deadSound>
+            <hurtSound>hurt.ogg</hurtSound>
+        </sounds>
+    </res>
+
+</entity>
